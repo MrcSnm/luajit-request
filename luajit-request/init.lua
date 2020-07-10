@@ -107,7 +107,7 @@ request = {
 			- code: The HTTP status code the response gave. Will not exist if header_stream_callback is defined above.
 			- body: The body of the response. Will not exist if body_stream_callback is defined above.
 			- headers: A dictionary of headers and their values. Will not exist if header_stream_callback is defined above.
-			- headers_raw: A raw string containing the actual headers the server sent back. Will not exist if header_stream_callback is defined above.
+			- raw_headers: A raw string containing the actual headers the server sent back. Will not exist if header_stream_callback is defined above.
 			- set_cookies: A dictionary of cookies given by the "Set-Cookie" header from the server. Will not exist if the server did not set any cookies.
 
 		If an error occured, false will be returned along with a curl error code and a message.
